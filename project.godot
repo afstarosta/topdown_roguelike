@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="topdown_roguelike"
+run/main_scene="res://scenes/movableThing.tscn"
 config/icon="res://icon.png"
 
 [rendering]
