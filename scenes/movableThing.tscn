@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/movableThing.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://sprites/light.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 21.7963, 22.3081 )
@@ -10,7 +11,6 @@ extents = Vector2( 21.7963, 22.3081 )
 extents = Vector2( 56.08, 51.0322 )
 
 [node name="movableThing" type="KinematicBody2D"]
-position = Vector2( -0.735107, 0 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 
@@ -21,6 +21,17 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="interactableArea" type="Area2D" parent="."]
+editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactableArea"]
 shape = SubResource( 2 )
+
+[node name="Light2D" type="Light2D" parent="."]
+scale = Vector2( 0.617188, 0.617188 )
+texture = ExtResource( 3 )
+color = Color( 0.72549, 0.313726, 0.313726, 1 )
+range_item_cull_mask = 3
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0.129412 )
+shadow_filter_smooth = 18.0
+shadow_item_cull_mask = 3
