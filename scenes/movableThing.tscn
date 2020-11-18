@@ -29,9 +29,8 @@ shape = SubResource( 2 )
 [node name="Light2D" type="Light2D" parent="."]
 scale = Vector2( 0.617188, 0.617188 )
 texture = ExtResource( 3 )
-color = Color( 0.72549, 0.313726, 0.313726, 1 )
+color = Color( 0.937255, 0.937255, 0.937255, 1 )
 range_item_cull_mask = 3
 shadow_enabled = true
-shadow_color = Color( 0, 0, 0, 0.129412 )
-shadow_filter_smooth = 18.0
+shadow_color = Color( 0, 0, 0, 1 )
 shadow_item_cull_mask = 3

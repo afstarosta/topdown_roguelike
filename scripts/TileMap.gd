@@ -6,7 +6,7 @@ func _ready():
     place_door_nodes()
 
 func place_door_nodes():
-    var doors = get_used_cells_by_id(1)
+    var doors = get_used_cells_by_id(2)
     for door in doors:
         var door_position = map_to_world(door)
         var door_node_instance = door_node.instance()
