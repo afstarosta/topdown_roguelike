@@ -3,10 +3,11 @@ extends TileMap
 onready var door_node = load("res://scenes/door.tscn")
 
 func _ready():
-    place_door_nodes()
+    place_door_nodes(0)
+    place_door_nodes(2)
 
-func place_door_nodes():
-    var doors = get_used_cells_by_id(2)
+func place_door_nodes(id):
+    var doors = get_used_cells_by_id(id)
     for door in doors:
         var door_position = map_to_world(door)
         var door_node_instance = door_node.instance()
