@@ -5,6 +5,7 @@ done:
 - area of light/sight 
 
 to do:
+- basic enemy mechanics
 - sight detection and triggers
 - hearing detection and triggers
 
